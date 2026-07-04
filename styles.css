@@ -139,16 +139,16 @@ header{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);
 .contact .sec-kicker{color:var(--y)}
 .contact h2{font-family:"Anton",sans-serif;font-weight:400;font-size:clamp(30px,5vw,48px);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
 .contact p{color:var(--dim);margin-bottom:26px}
-.contact-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.contact-card{display:inline-flex;align-items:center;gap:13px;text-align:left;
-  background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px 20px;
-  transition:transform .14s var(--ease),border-color .2s,box-shadow .2s}
-.contact-card:hover{transform:translateY(-3px);border-color:var(--g);box-shadow:0 18px 38px -18px rgba(0,224,90,.4)}
-.contact-card .ci{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;flex:none;
-  background:rgba(0,224,90,.12);border:1px solid rgba(0,224,90,.4)}
-.contact-card .ci svg{width:22px;height:22px;stroke:var(--g);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.contact-card small{display:block;color:var(--faint);font-size:12px;font-family:"Space Mono",monospace;letter-spacing:.5px}
-.contact-card b{color:var(--ink);font-size:17px;font-weight:700}
+.contact-btns{display:flex;gap:14px 44px;justify-content:center;flex-wrap:wrap}
+.contact-card{display:inline-flex;align-items:center;gap:11px;text-align:left;
+  transition:transform .14s var(--ease)}
+.contact-card:hover{transform:translateY(-2px)}
+.contact-card:hover b{color:var(--g)}
+.contact-card .ci{display:grid;place-items:center;flex:none}
+.contact-card .ci svg{width:22px;height:22px;stroke:var(--g);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s var(--ease)}
+.contact-card:hover .ci svg{transform:scale(1.12)}
+.contact-card small{display:block;color:var(--faint);font-size:11px;font-family:"Space Mono",monospace;letter-spacing:1px}
+.contact-card b{color:var(--ink);font-size:16px;font-weight:700;transition:color .2s}
 
 /* ---- footer ---- */
 footer{border-top:1px solid rgba(31,74,46,.5);margin-top:70px;padding:44px 0 60px}
