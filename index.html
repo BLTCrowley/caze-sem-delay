@@ -3,75 +3,140 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de Privacidade — Cazé Sem Delay</title>
-<style>
-  :root { --g:#00a344; --ink:#12211a; --dim:#4c6653; --bg:#f6fbf5; --card:#fff; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-    font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif; padding:32px 16px; }
-  main { max-width:760px; margin:0 auto; background:var(--card); border:1px solid #d7e7d9;
-    border-radius:16px; padding:40px 40px 32px; box-shadow:0 12px 40px -18px rgba(0,60,20,.25); }
-  h1 { font-size:28px; margin:0 0 4px; }
-  .meta { color:var(--dim); font-size:14px; margin-bottom:24px; }
-  h2 { font-size:19px; margin:28px 0 8px; color:var(--g); }
-  p, li { color:#26382d; }
-  code { background:#eaf4ec; padding:1px 6px; border-radius:5px; font-size:14px; }
-  a { color:var(--g); }
-  .badge { display:inline-block; background:#eaf7ee; border:1px solid #bfe3c7; color:var(--g);
-    font-weight:700; font-size:13px; padding:6px 12px; border-radius:999px; margin-bottom:20px; }
-  footer { margin-top:28px; padding-top:16px; border-top:1px solid #e5efe6; color:var(--dim); font-size:13px; }
-</style>
+<title>Cazé Sem Delay — assista no tempo real</title>
+<meta name="description" content="Extensão do Chrome que reduz o atraso das lives do YouTube. Feita para a CazéTV, funciona em qualquer transmissão ao vivo.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="icon.png" alt="">Cazé Sem Delay<span class="o"></span></a>
+    <nav class="nav-links">
+      <a href="#recursos">Recursos</a>
+      <a href="#qualquer">Qualquer live</a>
+      <a href="privacidade.html">Privacidade</a>
+      <a class="btn btn-g" href="https://chromewebstore.google.com/detail/gmfbbgeihenmmnpkmefojhnpockgpnch">Instalar</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <div class="badge">🔒 Não coletamos nenhum dado pessoal</div>
-  <h1>Política de Privacidade — Cazé Sem Delay</h1>
-  <p class="meta">Última atualização: 4 de julho de 2026 · Responsável: Gabriel ·
-    <a href="mailto:gabrieliq783@gmail.com">gabrieliq783@gmail.com</a> ·
-    <a href="https://instagram.com/gxbrielzb">@gxbrielzb</a></p>
+  <!-- HERO -->
+  <section class="hero wrap">
+    <span class="chip reveal" style="animation-delay:.05s">⚽ EXTENSÃO PARA O CHROME</span>
+    <h1 class="reveal" style="animation-delay:.12s">Assista<br><em>sem atraso.</em></h1>
+    <p class="sub reveal" style="animation-delay:.2s">Reduz o delay das lives do YouTube e te cola no ao vivo.
+      <b>Feito para a CazéTV</b> — e funciona em <b>qualquer transmissão ao vivo</b>.</p>
+    <div class="cta-row reveal" style="animation-delay:.28s">
+      <a class="btn btn-g" href="https://chromewebstore.google.com/detail/gmfbbgeihenmmnpkmefojhnpockgpnch">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        Adicionar ao Chrome</a>
+      <a class="btn btn-ghost" href="#recursos">Ver recursos</a>
+    </div>
+    <p class="hero-badge reveal" style="animation-delay:.34s">Grátis · sem anúncios · sem coleta de dados</p>
 
-  <h2>Resumo</h2>
-  <p>O <strong>Cazé Sem Delay</strong> não coleta, não armazena em servidores, não transmite,
-    não vende e não compartilha nenhum dado pessoal. Todo o processamento acontece exclusivamente
-    no navegador do usuário.</p>
+    <!-- speedometer -->
+    <div class="gauge reveal" style="animation-delay:.42s">
+      <span class="rate mono">1.25×</span>
+      <div class="row"><span class="live"><span class="dot"></span>AO VIVO</span><span>latência: recuperando…</span></div>
+      <div class="bar"><span></span></div>
+      <div class="scale"><span>atrasado</span><span>tempo real</span></div>
+    </div>
+  </section>
 
-  <h2>Dados que a extensão NÃO coleta</h2>
-  <p>Não coletamos identificação pessoal, histórico de navegação, localização, dados financeiros,
-    conteúdo de comunicações, credenciais nem atividade do usuário. Não há cookies, rastreadores,
-    analytics ou telemetria externa.</p>
+  <!-- STATS -->
+  <section class="wrap">
+    <div class="stats">
+      <div class="stat"><b>1,25×</b><span>aceleração suave</span></div>
+      <div class="stat"><b>6</b><span>modos de buffer</span></div>
+      <div class="stat"><b>0</b><span>dados coletados</span></div>
+      <div class="stat"><b>4</b><span>idiomas</span></div>
+    </div>
+  </section>
 
-  <h2>Dados armazenados localmente</h2>
-  <p>As preferências (modo, indicadores) e uma telemetria de sessão puramente local ficam gravadas
-    apenas em <code>chrome.storage.local</code>, no dispositivo do usuário. Nunca saem do aparelho e
-    podem ser apagadas removendo a extensão.</p>
+  <!-- FEATURES -->
+  <section class="sec wrap" id="recursos">
+    <p class="sec-kicker">O QUE ELE FAZ</p>
+    <h2>Recursos</h2>
+    <p class="lead">Tudo pensado pra quem não quer saber do gol pelo grito do vizinho.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M11 2 3 14h7l-1 8 8-12h-7z"/></svg></div>
+        <h3>Modo Automático</h3>
+        <p>Mede sua conexão e se ajusta sozinho: mais perto do ao vivo quando a internet aguenta, mais buffer quando ela oscila. Zero configuração.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="7" cy="18" r="2" fill="currentColor" stroke="none"/></svg></div>
+        <h3>6 modos manuais</h3>
+        <p>Prefere no controle? Desligado, Suave, Equilibrado, Próximo e Extremo — do mais estável ao mais colado no ao vivo.</p>
+      </div>
+      <div class="card exp">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8l3 2.2-1.1 3.6h-3.8L9 10.2z"/></svg></div>
+        <h3>Modo Jogo <span class="tag">experimental</span></h3>
+        <p>Quando o chat explode em "GOOOL", o motor aperta o buffer por alguns segundos pra te colar no ao vivo bem na hora do lance.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div>
+        <h3>Aviso de live</h3>
+        <p>Uma notificação no seu computador assim que a CazéTV entra ao vivo, com o título. Clique e caia direto no jogo.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg></div>
+        <h3>Prévia no popup</h3>
+        <p>Veja de relance se a CazéTV está ao vivo agora, com miniatura e título — e abra a transmissão em um clique.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg></div>
+        <h3>Telemetria ao vivo</h3>
+        <p>Latência, velocidade, saúde do buffer e segundos recuperados — no player e no popup, em tempo real.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Permissões</h2>
-  <ul>
-    <li><strong>storage</strong> — salvar preferências localmente.</li>
-    <li><strong>alarms</strong> — verificar periodicamente se a CazéTV está ao vivo (notificação).</li>
-    <li><strong>notifications</strong> — avisar quando a CazéTV inicia uma transmissão.</li>
-    <li><strong>host youtube.com</strong> — atuar no player do YouTube e consultar a página pública
-      do canal para prévia e detecção de live. As requisições são feitas diretamente pelo navegador
-      do usuário ao YouTube, sem intermediário ou servidor da extensão.</li>
-  </ul>
+  <!-- BAND -->
+  <section class="sec wrap" id="qualquer">
+    <div class="band">
+      <h2>CazéTV em destaque.<br><em>Qualquer live</em> no motor.</h2>
+      <p>Jogos, shows, eSports, podcasts ao vivo — se é live no YouTube, o catch-up funciona.</p>
+    </div>
+  </section>
 
-  <h2>Código remoto</h2>
-  <p>A extensão não carrega nem executa código remoto. Todo o JavaScript está empacotado na própria
-    extensão (Manifest V3).</p>
-
-  <h2>Terceiros</h2>
-  <p>A extensão interage apenas com o YouTube (Google LLC), diretamente pelo navegador do usuário.
-    Nenhum dado é enviado a terceiros pela extensão.</p>
-
-  <h2>Base legal</h2>
-  <p>Observa a Lei nº 13.709/2018 (LGPD) e o GDPR (UE 2016/679), no que couber. Como não há
-    tratamento de dados pessoais fora do dispositivo, não há transferência, compartilhamento ou
-    retenção de dados por parte do responsável.</p>
-
-  <h2>Contato</h2>
-  <p>Dúvidas sobre privacidade: <a href="mailto:gabrieliq783@gmail.com">gabrieliq783@gmail.com</a>.</p>
-
-  <footer>© 2026 Gabriel. Todos os direitos reservados.</footer>
+  <!-- PRIVACY TEASER -->
+  <section class="sec wrap">
+    <div class="priv-teaser">
+      <div>
+        <span class="pill">🔒 Zero coleta de dados</span>
+        <h3>Sua privacidade, intacta</h3>
+        <p>O Cazé Sem Delay não coleta, não armazena e não compartilha nenhum dado pessoal. Sem rastreadores, sem analytics, sem código remoto. Tudo roda no seu navegador.</p>
+      </div>
+      <a class="btn btn-ghost" href="privacidade.html">Ler a política completa →</a>
+    </div>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html"><img src="icon.png" alt="">Cazé Sem Delay<span class="o"></span></a>
+        <p>Extensão independente que mantém as lives do YouTube em tempo real. Feita pela torcida, pra torcida.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#recursos">Recursos</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="https://chromewebstore.google.com/detail/gmfbbgeihenmmnpkmefojhnpockgpnch">Chrome Web Store</a>
+        <a href="mailto:gabrieliq783@gmail.com">gabrieliq783@gmail.com</a>
+        <a href="https://instagram.com/gxbrielzb">@gxbrielzb</a>
+      </div>
+    </div>
+    <p class="copyr">© 2026 Gabriel. Todos os direitos reservados. Projeto independente, sem afiliação com a CazéTV, o YouTube ou a Google. "CazéTV" e "YouTube" pertencem aos seus respectivos titulares.</p>
+  </div>
+</footer>
+
 </body>
 </html>
